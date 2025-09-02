@@ -59,4 +59,27 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &carta1.pontosTuristicos);
 
-    
+    // --- Cadastro da Carta 2 ---
+    // Mensagem de instrução para o usuário
+    printf("\n--- Cadastro da Segunda Carta ---\n");
+    // Solicita e lê o estado da cidade
+    printf("Digite o estado: ");
+    scanf("%s", carta2.estado);
+    // Solicita e lê o código da carta
+    printf("Digite o código da carta: ");
+    scanf("%d", &carta2.codigoCarta);
+    // Solicita e lê o nome da cidade
+    printf("Digite o nome da cidade: ");
+    scanf("%s", carta2.nomeCidade);
+    // Solicita e lê a população da cidade
+    printf("Digite a população: ");
+    scanf("%lld", &carta2.populacao);
+    // Solicita e lê a área da cidade
+    printf("Digite a área (em km²): ");
+    scanf("%lf", &carta2.area);
+    // Solicita e lê o PIB da cidade
+    printf("Digite o PIB (em bilhões de R$): ");
+    scanf("%lld", &carta2.pib);
+    // Solicita e lê o número de pontos turísticos
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &carta2.pontosTuristicos);
