@@ -83,3 +83,55 @@ int main() {
     // Solicita e lê o número de pontos turísticos
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &carta2.pontosTuristicos);
+
+// --- Exibição das Cartas ---
+    // Chama a função para exibir a primeira carta cadastrada
+    exibirCarta(carta1);
+    // Chama a função para exibir a segunda carta cadastrada
+    exibirCarta(carta2);
+
+    // --- Comparação das Cartas ---
+    // Mensagem de título para a comparação
+    printf("\n--- Comparação de Cartas ---\n");
+    // Mensagem indicando o atributo de comparação (PIB, neste caso)
+    printf("Atributo de comparação: PIB\n");
+
+    // Lógica para comparar o PIB das duas cartas
+    if (carta1.pib > carta2.pib) {
+        // Se o PIB da primeira carta for maior, ela é a vencedora
+        printf("A carta de %s venceu a rodada com um PIB de %lld.\n", carta1.nomeCidade, carta1.pib);
+    } else if (carta2.pib > carta1.pib) {
+        // Se o PIB da segunda carta for maior, ela é a vencedora
+        printf("A carta de %s venceu a rodada com um PIB de %lld.\n", carta2.nomeCidade, carta2.pib);
+    } else {
+        // Se os PIBs forem iguais, a rodada termina em empate
+        printf("As cartas de %s e %s empataram no atributo PIB.\n", carta1.nomeCidade, carta2.nomeCidade);
+    }
+
+    return 0; // Indica que o programa terminou com sucesso
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
